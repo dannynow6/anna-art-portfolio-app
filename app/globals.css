@@ -5,7 +5,7 @@
 
 /* Homepage Sections */
 .hero-section {
-	@apply flex flex-col md:flex-row gap-12 md:gap-6 w-full h-[475px] md:h-[350px] 2xl:h-[600px] p-12 lg:p-24 xl:p-48 2xl:p-80;
+	@apply flex md:flex-row md:gap-6 w-full h-[475px] md:h-[350px] 2xl:h-[600px] p-8 lg:p-16 xl:p-24 2xl:p-36;
 }
 
 .hero-section {
