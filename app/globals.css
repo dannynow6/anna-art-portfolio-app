@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* Homepage Sections */
+.hero-section {
+	@apply flex flex-col md:flex-row gap-12 md:gap-6 w-full h-[475px] md:h-[350px] 2xl:h-[600px] p-12 lg:p-24 xl:p-48 2xl:p-80;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-section {
+  background-image: url("../assets/b1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  border-radius: 20px; 
 }
