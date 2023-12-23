@@ -5,10 +5,10 @@ import Link from 'next/link'
 const HeroSection = () => {
   return (
     <div className='hero-section'>
-      <div className="flex flex-row w-full">
+      <div className='flex flex-row w-full'>
         <h2 className='text-slate-50 font-sans text-6xl float-start z-10'>
-        Anna Bissinger
-      </h2>
+          Anna Bissinger
+        </h2>
       </div>
     </div>
   )
