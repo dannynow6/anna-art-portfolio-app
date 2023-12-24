@@ -5,7 +5,7 @@ import { FaFacebook } from 'react-icons/fa'
 
 const BtnSection = () => {
   return (
-    <div className='flex flex-row justify-around rounded my-2 font-sans text-xs bg-gradient-to-b from-teal-200 via-sky-400 to-white p-2.5'>
+    <div className='flex flex-row justify-around rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-white p-2.5'>
       <button className='box-border h-14 w-20 rounded-r-lg bg-slate-500 hover:bg-amber-800 hover:font-bold text-white'>
         Wood Burning
       </button>
@@ -21,14 +21,14 @@ const BtnSection = () => {
           target='_blank'
           className='hover:font-semibold hover:text-white'
         >
-          <FaFacebook className='text-5xl pr-2 hover:text-amber-700' />
+          <FaFacebook className='text-5xl pr-2 hover:text-sky-700' />
         </Link>
         <Link
           href='https://www.instagram.com/'
           target='_blank'
           className='hover:font-semibold hover:text-white'
         >
-          <FaInstagram className='text-5xl pl-2 hover:text-amber-700' />
+          <FaInstagram className='text-5xl pl-2 hover:text-sky-700' />
         </Link>
       </div>
       <button className='box-border h-14 w-20 px-2 py-2 rounded-lg mx-1 bg-slate-500 hover:bg-slate-800 hover:font-bold text-white'>
