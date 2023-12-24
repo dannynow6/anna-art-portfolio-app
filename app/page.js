@@ -1,3 +1,5 @@
+// Home page for Anna's Portfolio
+
 import HeroSection from '@/components/Home/HeroSection'
 import BtnSection from '@/components/Home/BtnSection'
 
