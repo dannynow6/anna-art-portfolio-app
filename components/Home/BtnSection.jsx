@@ -6,10 +6,10 @@ import { FaFacebook } from 'react-icons/fa'
 const BtnSection = () => {
   return (
     <div className='flex flex-row justify-around rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-white p-2.5'>
-      <button className='box-border h-14 w-20 rounded-r-lg bg-slate-500 hover:bg-amber-800 hover:font-bold text-white'>
+      <button className='box-border h-14 p-2 w-20 rounded-r-lg bg-slate-500 hover:bg-amber-800 hover:font-bold text-white'>
         Wood Burning
       </button>
-      <button className='box-border h-14 w-20 p-1 rounded-lg mx-1 bg-slate-500 hover:bg-cyan-800 hover:font-bold text-white'>
+      <button className='box-border h-14 w-20 p-2 rounded-lg mx-1 bg-slate-500 hover:bg-cyan-800 hover:font-bold text-white'>
         Oil Painting
       </button>
       <button className='box-border h-14 w-20 px-2 py-2 rounded-lg mx-1 bg-slate-500 hover:bg-slate-900 hover:font-bold text-white'>
@@ -35,7 +35,7 @@ const BtnSection = () => {
         <Link href='/about'>About</Link>
       </button>
       <button className='box-border h-14 w-20 px-2 py-2 mx-1 rounded-l-lg bg-slate-500 hover:bg-slate-800 hover:font-bold text-white'>
-        Contact
+        <Link href='/contact'>Contact</Link>
       </button>
     </div>
   )
