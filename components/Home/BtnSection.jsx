@@ -15,16 +15,36 @@ import Info from '../../assets/Info.png'
 const BtnSection = () => {
   const pathname = usePathname()
   return (
-    <div className='flex flex-row justify-around rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-slate-100 p-2.5'>
-      <button className='nav-btn'>
-        <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
-      </button>
-      <button className='nav-btn'>
-        <Image className='rounded' src={Oil} alt='oil-painting-btn' />
-      </button>
-      <button className='nav-btn'>
-        <Image className='rounded' src={Tattoo} alt='tattoo-btn' />
-      </button>
+    <div className='flex flex-row justify-between rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-slate-100 p-2.5'>
+      <div className='flex justify-between'>
+        <button className='nav-btn'>
+          <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
+        </button>
+        <button className='nav-btn'>
+          <Image className='rounded' src={Oil} alt='oil-painting-btn' />
+        </button>
+        <button className='nav-btn'>
+          <Image className='rounded' src={Tattoo} alt='tattoo-btn' />
+        </button>
+        {/* Conditionally render link to Home if pathname !== '/' */}
+        {pathname !== '/' && (
+          <Link href='/'>
+            <FaHome className='text-5xl pr-2 text-gray-600 hover:text-sky-700 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl' />
+          </Link>
+        )}
+
+        <button className='nav-btn'>
+          <Link href='/about'>
+            <Image className='rounded' src={Info} alt='info-logo' />
+          </Link>
+        </button>
+        <button className='nav-btn'>
+          <Link href='/contact'>
+            <Image className='rounded' src={Contact} alt='contact-logo' />
+          </Link>
+        </button>
+      </div>
+
       <div className='flex justify-between my-1.5'>
         <Link
           href='https://www.facebook.com/'
@@ -41,23 +61,6 @@ const BtnSection = () => {
           <FaInstagram className='social-btn' />
         </Link>
       </div>
-      {/* Conditionally render link to Home if pathname !== '/' */}
-      {pathname !== '/' && (
-        <Link href='/'>
-          <FaHome className='text-5xl pr-2 text-gray-600 hover:text-sky-700 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl' />
-        </Link>
-      )}
-
-      <button className='nav-btn'>
-        <Link href='/about'>
-          <Image className='rounded' src={Info} alt='info-logo' />
-        </Link>
-      </button>
-      <button className='nav-btn'>
-        <Link href='/contact'>
-          <Image className='rounded' src={Contact} alt='contact-logo' />
-        </Link>
-      </button>
     </div>
   )
 }
