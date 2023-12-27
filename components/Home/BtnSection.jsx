@@ -1,8 +1,11 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { FaInstagram } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
+import { FaHome } from 'react-icons/fa'
 import Oil from '../../assets/OP.png'
 import WoodB from '../../assets/WB.png'
 import Tattoo from '../../assets/T.png'
@@ -10,15 +13,16 @@ import Contact from '../../assets/contact.png'
 import Info from '../../assets/Info.png'
 
 const BtnSection = () => {
+  const pathname = usePathname()
   return (
-    <div className='flex flex-row justify-around rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-white p-2.5'>
-      <button className='box-border h-16 w-16 rounded mx-1 bg-slate-500 hover:bg-amber-800'>
+    <div className='flex flex-row justify-around rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-slate-100 p-2.5'>
+      <button className='nav-btn'>
         <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
       </button>
-      <button className='box-border h-16 w-16 rounded mx-1 bg-slate-500 hover:bg-cyan-800 hover:font-bold text-white'>
+      <button className='nav-btn'>
         <Image className='rounded' src={Oil} alt='oil-painting-btn' />
       </button>
-      <button className='box-border h-16 w-16 rounded mx-1 bg-slate-500 hover:bg-slate-900 hover:font-bold text-white'>
+      <button className='nav-btn'>
         <Image className='rounded' src={Tattoo} alt='tattoo-btn' />
       </button>
       <div className='flex justify-between my-1.5'>
@@ -27,22 +31,29 @@ const BtnSection = () => {
           target='_blank'
           className='hover:font-semibold hover:text-white'
         >
-          <FaFacebook className='text-4xl pr-2 hover:text-sky-700' />
+          <FaFacebook className='social-btn' />
         </Link>
         <Link
           href='https://www.instagram.com/'
           target='_blank'
           className='hover:font-semibold hover:text-white'
         >
-          <FaInstagram className='text-4xl pl-2 hover:text-sky-700' />
+          <FaInstagram className='social-btn' />
         </Link>
       </div>
-      <button className='box-border h-16 w-16 rounded mx-1 bg-slate-500 hover:bg-slate-800 hover:font-bold text-white'>
+      {/* Conditionally render link to Home if pathname !== '/' */}
+      {pathname !== '/' && (
+        <Link href='/'>
+          <FaHome className='text-5xl pr-2 text-gray-600 hover:text-sky-700 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl' />
+        </Link>
+      )}
+
+      <button className='nav-btn'>
         <Link href='/about'>
           <Image className='rounded' src={Info} alt='info-logo' />
         </Link>
       </button>
-      <button className='box-border h-16 w-16 mx-1 rounded bg-slate-500 hover:bg-slate-800 hover:font-bold text-white'>
+      <button className='nav-btn'>
         <Link href='/contact'>
           <Image className='rounded' src={Contact} alt='contact-logo' />
         </Link>
