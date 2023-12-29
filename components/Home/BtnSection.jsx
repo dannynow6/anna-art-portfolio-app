@@ -18,6 +18,12 @@ const BtnSection = () => {
   return (
     <div className='flex flex-row justify-between rounded my-1 mx-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-slate-100 p-2.5'>
       <div className='flex justify-between'>
+        {/* Conditionally render link to Home if pathname !== '/' */}
+        {pathname !== '/' && (
+          <Link href='/'>
+            <Image className='nav-btn' src={Home} alt='home-icon' />
+          </Link>
+        )}
         <button className='nav-btn'>
           <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
         </button>
@@ -27,13 +33,6 @@ const BtnSection = () => {
         <button className='nav-btn'>
           <Image className='rounded' src={Tattoo} alt='tattoo-btn' />
         </button>
-        {/* Conditionally render link to Home if pathname !== '/' */}
-        {pathname !== '/' && (
-          <Link href='/'>
-            <Image className='nav-btn' src={Home} alt='home-icon' />
-          </Link>
-        )}
-
         <button className='nav-btn'>
           <Link href='/about'>
             <Image className='rounded' src={Info} alt='info-logo' />
