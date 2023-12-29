@@ -5,17 +5,18 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { FaInstagram } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
-import { FaHome } from 'react-icons/fa'
+//import { FaHome } from 'react-icons/fa'
 import Oil from '../../assets/OP.png'
 import WoodB from '../../assets/WB.png'
 import Tattoo from '../../assets/T.png'
 import Contact from '../../assets/contact.png'
 import Info from '../../assets/Info.png'
+import Home from '../../assets/home-icon.png'
 
 const BtnSection = () => {
   const pathname = usePathname()
   return (
-    <div className='flex flex-row justify-between rounded my-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-slate-100 p-2.5'>
+    <div className='flex flex-row justify-between rounded my-1 mx-2 font-sans text-xs bg-gradient-to-b from-slate-100 via-sky-100 to-slate-100 p-2.5'>
       <div className='flex justify-between'>
         <button className='nav-btn'>
           <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
@@ -29,7 +30,7 @@ const BtnSection = () => {
         {/* Conditionally render link to Home if pathname !== '/' */}
         {pathname !== '/' && (
           <Link href='/'>
-            <FaHome className='text-5xl pr-2 text-gray-600 hover:text-sky-700 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl' />
+            <Image className='nav-btn' src={Home} alt='home-icon' />
           </Link>
         )}
 

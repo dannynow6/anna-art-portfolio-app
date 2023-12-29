@@ -5,7 +5,7 @@ import AboutImage from '../../assets/about.jpg'
 const BioSection = () => {
   return (
     <div className='flex justify-center my-4'>
-      <div className='max-w-lg rounded-lg overflow-hidden shadow-lg my-2'>
+      <div className='max-w-lg rounded-2xl overflow-hidden shadow-lg my-2'>
         <Image
           className='w-full'
           src={AboutImage}

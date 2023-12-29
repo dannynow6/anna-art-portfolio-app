@@ -11,7 +11,7 @@ const ImgSection = () => {
 
       <div className='flex justify-around'>
         <Image
-          className='max-w-xl rounded-xl p-2'
+          className='max-w-xl rounded-2xl p-2'
           src={CouchImg}
           alt='example-wood-burning'
           layout='responsive'
