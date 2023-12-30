@@ -1,18 +1,18 @@
-// Page for Contacting Anna - requesting Commission
+// Page for showcasing Anna Wood Burning Projects
 import React from 'react'
 import BtnSection from '@/components/Home/BtnSection'
 import Layout from '@/components/Home/Layout'
-import Commission from '@/components/Contact/Commission'
+import WBTitle from '@/components/WoodBurning/WBTitle'
 
-const ContactPage = () => {
+const WoodBurningPage = () => {
   return (
     <>
       <Layout>
         <BtnSection />
-        <Commission />
+        <WBTitle />
       </Layout>
     </>
   )
 }
 
-export default ContactPage
+export default WoodBurningPage

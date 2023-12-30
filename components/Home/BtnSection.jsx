@@ -25,13 +25,19 @@ const BtnSection = () => {
           </Link>
         )}
         <button className='nav-btn'>
-          <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
+          <Link href='/wood-burning'>
+            <Image className='rounded' src={WoodB} alt='Wood-Burning-Btn' />
+          </Link>
         </button>
         <button className='nav-btn'>
-          <Image className='rounded' src={Oil} alt='oil-painting-btn' />
+          <Link href='/oil-painting'>
+            <Image className='rounded' src={Oil} alt='oil-painting-btn' />
+          </Link>
         </button>
         <button className='nav-btn'>
-          <Image className='rounded' src={Tattoo} alt='tattoo-btn' />
+          <Link href='/tattoos'>
+            <Image className='rounded' src={Tattoo} alt='tattoo-btn' />
+          </Link>
         </button>
         <button className='nav-btn'>
           <Link href='/about'>

@@ -1,18 +1,18 @@
-// Page for Contacting Anna - requesting Commission
+// Page for Anna's Tattoos
 import React from 'react'
 import BtnSection from '@/components/Home/BtnSection'
 import Layout from '@/components/Home/Layout'
-import Commission from '@/components/Contact/Commission'
+import TTitle from '@/components/Tattoos/TTitle'
 
-const ContactPage = () => {
+const TattoosPage = () => {
   return (
     <>
       <Layout>
         <BtnSection />
-        <Commission />
+        <TTitle />
       </Layout>
     </>
   )
 }
 
-export default ContactPage
+export default TattoosPage

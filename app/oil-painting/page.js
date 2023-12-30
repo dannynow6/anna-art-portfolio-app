@@ -1,18 +1,18 @@
-// Page for Contacting Anna - requesting Commission
+// Page for Anna's Oil Painting
 import React from 'react'
 import BtnSection from '@/components/Home/BtnSection'
 import Layout from '@/components/Home/Layout'
-import Commission from '@/components/Contact/Commission'
+import OPTitle from '@/components/OilPainting/OPTitle'
 
-const ContactPage = () => {
+const OilPaintingPage = () => {
   return (
     <>
       <Layout>
         <BtnSection />
-        <Commission />
+        <OPTitle />
       </Layout>
     </>
   )
 }
 
-export default ContactPage
+export default OilPaintingPage
