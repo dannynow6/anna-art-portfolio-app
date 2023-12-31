@@ -1,0 +1,15 @@
+For Contact page:
+Make form dynamic based on selection: 
+- Form will always include full name, phone, email, best way to contact
+Then form changes based on request type: Painting request, Tattoo Appointment request, Pyrography request, Other request 
+
+
+- Change from Wood Burning to Pyrography on all pages / titles / menus 
+
+For each main page make a hero section similar to home page but slightly smaller 
+- For all hero sections, make the title of page centered over image 
+
+Make main nav menu dropdown for all items except Contact page and social always visible 
+- Make menu transparent within hero section of all pages 
+- social and contact select for menu on left hand side 
+- hamburger dropdown icon on right 
