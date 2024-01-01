@@ -8,12 +8,7 @@ import { IoMenuOutline } from 'react-icons/io5'
 import Contact from '../../assets/contact.png'
 
 /*
-    Create reusable Nav Section to be included in Hero section for each page of 
-    Anna's Portfolio Site 
-    - Left hand side: Hamburger Menu to access dropdown for main site navigation 
-        - (Home, Pyrography, Painting, Tattoos, About)
-    - Center: Social Icons to access Anna's Social Media (Facebook/Instagram) 
-    - Right Hand Side: Contact icon to access Contact Page 
+    Work on Getting Dropdown menu working and functional - See below IoMenuOutline
 */
 
 const NavSection = () => {
@@ -23,7 +18,13 @@ const NavSection = () => {
     <>
       <nav className='rounded-lg h-12 bg-slate-50 bg-opacity-15 text-white w-full'>
         <div className='flex justify-between mx-3'>
-          <IoMenuOutline className='text-4xl mt-1.5 hover:text-cyan-600' />
+          {/* working on dropdown menu and functionality */}
+          <div className='relative'>
+            <IoMenuOutline
+              className='text-4xl mt-1.5 hover:text-cyan-600'
+              id='nav-dropdown'
+            />
+          </div>
           <div className='flex justify-around'>
             <Link href='https://www.facebook.com/' target='_blank'>
               <FaFacebook className='social-btn' />
