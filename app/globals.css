@@ -20,5 +20,5 @@
 }
 
 .social-btn {
-  @apply text-4xl pr-2 text-white hover:text-cyan-600 hover:font-semibold mt-1.5; 
+  @apply text-4xl pr-2 text-white hover:text-cyan-600 hover:font-semibold mt-2; 
 }

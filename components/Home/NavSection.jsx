@@ -16,16 +16,16 @@ const NavSection = () => {
 
   return (
     <>
-      <nav className='rounded-lg h-12 bg-slate-50 bg-opacity-15 text-white w-full'>
+      <nav className='rounded-lg h-12 text-white w-full'>
         <div className='flex justify-between mx-3'>
           {/* working on dropdown menu and functionality */}
-          <div className='relative'>
+          <div className='relative bg-slate-50 bg-opacity-15 rounded-lg'>
             <IoMenuOutline
-              className='text-4xl mt-1.5 hover:text-cyan-600'
+              className='text-4xl mt-2 hover:text-cyan-600'
               id='nav-dropdown'
             />
           </div>
-          <div className='flex justify-around'>
+          <div className='flex justify-around bg-slate-50 bg-opacity-15 rounded-lg pl-2'>
             <Link href='https://www.facebook.com/' target='_blank'>
               <FaFacebook className='social-btn' />
             </Link>
@@ -33,7 +33,7 @@ const NavSection = () => {
               <FaInstagram className='social-btn' />
             </Link>
           </div>
-          <button className='nav-btn'>
+          <button className='h-12 w-12 rounded-lg mx-2 my-1 p-2 grayscale bg-slate-50 bg-opacity-15 sm:h-6 sm:w-6 md:h-10 md:w-10 lg:h-12 lg:w-12 xl:h-12 xl:w-12 hover:grayscale-0'>
             <Link href='/contact'>
               <Image className='rounded' src={Contact} alt='contact-logo' />
             </Link>
