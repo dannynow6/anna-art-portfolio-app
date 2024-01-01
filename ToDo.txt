@@ -8,6 +8,8 @@ Then form changes based on request type: Painting request, Tattoo Appointment re
 
 For each main page make a hero section similar to home page but slightly smaller 
 - For all hero sections, make the title of page centered over image 
+- Make a page title component to add to hero sections - define height of section and transparent box for text 
+- make a component for nav buttons to be added to hero sections - size and place at bottom of section 
 
 Make main nav menu dropdown for all items except Contact page and social always visible 
 - Make menu transparent within hero section of all pages 
