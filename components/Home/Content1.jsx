@@ -9,7 +9,7 @@ const Content1 = () => {
     <>
       <div className='flex flex-row items-center justify-center my-2'>
         {/* Container for Image and Text */}
-        <div className='flex flex-row items-center justify-center space-x-4'>
+        <div className='flex flex-row items-center justify-center space-x-4 mt-3'>
           <div className='w-1/2'>
             <Image
               className='rounded-lg ml-3'

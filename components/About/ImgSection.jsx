@@ -2,6 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import CouchImg from '../../assets/b-couch.jpg'
 
+// Add Carousel using Embla Carousel Package 
+// installed using npm install embla-carousel-react 
+
 const ImgSection = () => {
   return (
     <>
