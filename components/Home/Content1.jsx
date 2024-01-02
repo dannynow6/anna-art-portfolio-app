@@ -7,7 +7,7 @@ import WB3 from '../../assets/b1.jpg'
 const Content1 = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-center my-1.5'>
+      <div className='flex flex-row items-center justify-center my-2'>
         {/* Container for Image and Text */}
         <div className='flex flex-row items-center justify-center space-x-4'>
           <div className='w-1/2'>
@@ -29,7 +29,7 @@ const Content1 = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-row items-center justify-center my-1.5'>
+      <div className='flex flex-row items-center justify-center my-2'>
         <div className='w-1/2 text-right'>
           <h2 className='text-2xl font-bold mb-4'>Project 2 Title</h2>
           <p>

@@ -15,10 +15,18 @@
   border-radius: 20px; 
 }
 
+.page-title {
+  @apply text-slate-50 font-sans p-12 text-6xl mt-6 z-10 rounded-3xl bg-gray-950 bg-opacity-45 sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl xl:p-16 first-letter:text-teal-300 first-letter:font-semibold first-letter:opacity-50;
+}
+
 .nav-btn {
   @apply box-border h-10 w-10 rounded mx-2 my-1 grayscale sm:h-6 sm:w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 hover:grayscale-0; 
 }
 
 .social-btn {
-  @apply text-4xl pr-2 text-white hover:text-cyan-600 hover:font-semibold mt-2; 
+  @apply text-4xl px-1.5 text-white hover:text-cyan-600 hover:font-semibold hover:cursor-pointer; 
+}
+
+.dropdown-nav {
+  @apply block px-4 py-2 hover:font-semibold hover:text-cyan-600; 
 }

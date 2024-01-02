@@ -1,15 +1,13 @@
 // Page for Anna's Tattoos
 import React from 'react'
-import BtnSection from '@/components/Home/BtnSection'
 import Layout from '@/components/Home/Layout'
-import TTitle from '@/components/Tattoos/TTitle'
+import HeroSection from '@/components/Home/HeroSection'
 
 const TattoosPage = () => {
   return (
     <>
       <Layout>
-        <BtnSection />
-        <TTitle />
+        <HeroSection />
       </Layout>
     </>
   )

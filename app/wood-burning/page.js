@@ -1,15 +1,13 @@
 // Page for showcasing Anna Wood Burning Projects
 import React from 'react'
-import BtnSection from '@/components/Home/BtnSection'
 import Layout from '@/components/Home/Layout'
-import WBTitle from '@/components/WoodBurning/WBTitle'
+import HeroSection from '@/components/Home/HeroSection'
 
 const WoodBurningPage = () => {
   return (
     <>
       <Layout>
-        <BtnSection />
-        <WBTitle />
+        <HeroSection />
       </Layout>
     </>
   )

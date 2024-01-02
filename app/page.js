@@ -2,7 +2,7 @@
 
 import HeroSection from '@/components/Home/HeroSection'
 import Content1 from '@/components/Home/Content1'
-import BtnSection from '@/components/Home/BtnSection'
+// import BtnSection from '@/components/Home/BtnSection'
 import Layout from '@/components/Home/Layout'
 
 export default function Home () {
@@ -10,7 +10,6 @@ export default function Home () {
     <Layout>
       <main className='flex flex-col'>
         <HeroSection />
-        <BtnSection />
         <Content1 />
       </main>
     </Layout>

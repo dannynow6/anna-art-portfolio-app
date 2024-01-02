@@ -50,7 +50,7 @@ const BtnSection = () => {
           </Link>
         </button>
       </div>
-
+      <Image className='rounded p-3' src={Contact} alt='contact-logo' />
       <div className='flex justify-between my-1.5'>
         <Link
           href='https://www.facebook.com/'

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='bg-transparent flex w-full bottom-0 mb-1 mx-1'>
       <p className='text-[10px] mx-auto'>
-        &copy; 2023 - 2024, Anna-Art | All Rights Reserved
+        &copy; 2023 - 2024, Anna-Saveria-Art | All Rights Reserved
       </p>
     </div>
   )
