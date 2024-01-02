@@ -39,10 +39,10 @@ const NavSection = () => {
               <Link href='/about' className='dropdown-nav'>
                 About
               </Link>
-              <Link href='/wood-burning' className='dropdown-nav'>
+              <Link href='/pyrography' className='dropdown-nav'>
                 Pyrography
               </Link>
-              <Link href='/oil-painting' className='dropdown-nav'>
+              <Link href='/painting' className='dropdown-nav'>
                 Painting
               </Link>
               <Link href='/tattoos' className='dropdown-nav'>

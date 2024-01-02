@@ -1,9 +1,9 @@
-// Page for Anna's Oil Painting
+// Page for Anna's Painting
 import React from 'react'
 import Layout from '@/components/Home/Layout'
 import HeroSection from '@/components/Home/HeroSection'
 
-const OilPaintingPage = () => {
+const PaintingPage = () => {
   return (
     <>
       <Layout>
@@ -13,4 +13,4 @@ const OilPaintingPage = () => {
   )
 }
 
-export default OilPaintingPage
+export default PaintingPage

@@ -13,13 +13,15 @@ const HeroSection = () => {
         {pathname === '/contact' && (
           <h2 className='page-title'>Contact Anna</h2>
         )}
-        {pathname === '/oil-painting' && (
-          <h2 className='page-title'>Painting</h2>
+        {pathname === '/painting' && (
+          <h2 className='page-title'>Painting by Anna</h2>
         )}
-        {pathname === '/wood-burning' && (
-          <h2 className='page-title'>Pyrography</h2>
+        {pathname === '/pyrography' && (
+          <h2 className='page-title'>Pyrography by Anna</h2>
         )}
-        {pathname === '/tattoos' && <h2 className='page-title'>Tattoos</h2>}
+        {pathname === '/tattoos' && (
+          <h2 className='page-title'>Tattoos by Anna</h2>
+        )}
       </div>
       <NavSection />
     </div>

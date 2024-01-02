@@ -1,9 +1,9 @@
-// Page for showcasing Anna Wood Burning Projects
+// Page for showcasing Anna Pyrography Projects
 import React from 'react'
 import Layout from '@/components/Home/Layout'
 import HeroSection from '@/components/Home/HeroSection'
 
-const WoodBurningPage = () => {
+const PyrographyPage = () => {
   return (
     <>
       <Layout>
@@ -13,4 +13,4 @@ const WoodBurningPage = () => {
   )
 }
 
-export default WoodBurningPage
+export default PyrographyPage
