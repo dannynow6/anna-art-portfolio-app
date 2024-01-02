@@ -30,3 +30,18 @@
 .dropdown-nav {
   @apply block px-4 py-2 hover:font-semibold hover:text-cyan-600; 
 }
+
+/* About Page Carousel */
+.embla {
+  padding: 1.6rem;  
+  overflow: hidden;
+}
+
+.embla_container {
+  display: flex; 
+}
+
+.embla_slide {
+  flex: 0 0 100%; 
+  min-width: 0; 
+}
