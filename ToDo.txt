@@ -15,3 +15,33 @@ Make main nav menu dropdown for all items except Contact page and social always 
 - Make menu transparent within hero section of all pages 
 - social and contact select for menu on left hand side 
 - hamburger dropdown icon on right 
+
+
+
+<div className='embla_slide'>
+              <Image
+                className='rounded-lg'
+                src={CouchImg}
+                alt='example-pyrography'
+                width={500}
+                height={334}
+              />
+            </div>
+            <div className='embla_slide'>
+              <Image
+                className='rounded-lg'
+                src={WB1}
+                alt='example-pyrography'
+                width={500}
+                height={334}
+              />
+            </div>
+            <div className='embla_slide'>
+              <Image
+                className='rounded-lg'
+                src={WB2}
+                alt='example-pyrography'
+                width={500}
+                height={334}
+              />
+            </div>

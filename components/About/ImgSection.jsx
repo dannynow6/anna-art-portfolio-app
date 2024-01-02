@@ -7,11 +7,28 @@ import Autoplay from 'embla-carousel-autoplay'
 import WB1 from '../../assets/b1.jpg'
 import WB2 from '../../assets/about.jpg'
 
-// Make carousel images pulled from DB
-// For now, map from list of image objects
+const featured = [
+  {
+    id: 1,
+    image: CouchImg,
+    title: 'Pyrography Anime Couch'
+  },
+  {
+    id: 2,
+    image: WB1,
+    title: 'Pyrography Anime Example 1'
+  },
+  {
+    id: 3,
+    image: WB2,
+    title: 'Pyrography Anime Example 2'
+  }
+]
 
 const ImgSection = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 3500 })
+  ])
 
   return (
     <>
@@ -22,33 +39,17 @@ const ImgSection = () => {
       <div className='flex justify-around'>
         <div className='embla' ref={emblaRef}>
           <div className='embla_container'>
-            <div className='embla_slide'>
-              <Image
-                className='rounded-lg'
-                src={CouchImg}
-                alt='example-pyrography'
-                width={500}
-                height={334}
-              />
-            </div>
-            <div className='embla_slide'>
-              <Image
-                className='rounded-lg'
-                src={WB1}
-                alt='example-pyrography'
-                width={500}
-                height={334}
-              />
-            </div>
-            <div className='embla_slide'>
-              <Image
-                className='rounded-lg'
-                src={WB2}
-                alt='example-pyrography'
-                width={500}
-                height={334}
-              />
-            </div>
+            {featured.map(feature => (
+              <div className='embla_slide' key={feature.id}>
+                <Image
+                  className='rounded-lg'
+                  src={feature.image}
+                  alt={feature.title}
+                  width={500}
+                  height={334}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
