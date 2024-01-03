@@ -39,7 +39,7 @@ const featured = [
 
 const ImgSection = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3500 })
+    Autoplay({ delay: 3000 })
   ])
 
   const ImgStyle = {
@@ -62,7 +62,6 @@ const ImgSection = () => {
                   src={feature.image}
                   alt={feature.title}
                   width={500}
-                  height={334}
                   style={ImgStyle}
                 />
               </div>

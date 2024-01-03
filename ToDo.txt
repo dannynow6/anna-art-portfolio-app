@@ -2,7 +2,7 @@
   - Create a component for Tattoos, Painting, and Pyrography pages to display dynamic content. Make components as reusable as possible for general consistency and usability 
 
   - For Pyrography, Painting & Tattoos Pages: 
-    - Create a section for image and text 
+    - (done) Create a section for image and text 
     - Create a text section 
     - Create an image/text section with image on opposite side 
 

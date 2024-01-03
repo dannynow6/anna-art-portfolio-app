@@ -6,7 +6,7 @@ const ImgStyle = {
   height: 'auto'
 }
 
-const ContentSection1 = () => {
+const TCSection1 = () => {
   return (
     <>
       <div className='flex flex-row items-center justify-center m-2.5'>
@@ -17,8 +17,7 @@ const ContentSection1 = () => {
               className='rounded-lg ml-3'
               src={Ink}
               alt='Tattoo Ink'
-              width={500}
-              height={334}
+              width={425}
               style={ImgStyle}
             />
           </div>
@@ -38,4 +37,4 @@ const ContentSection1 = () => {
   )
 }
 
-export default ContentSection1
+export default TCSection1

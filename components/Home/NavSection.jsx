@@ -39,6 +39,9 @@ const NavSection = () => {
               <Link href='/about' className='dropdown-nav'>
                 About
               </Link>
+              <Link href='/contact' className='dropdown-nav'>
+                Contact Anna
+              </Link>
               <Link href='/pyrography' className='dropdown-nav'>
                 Pyrography
               </Link>
