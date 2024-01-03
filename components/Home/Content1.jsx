@@ -2,12 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import WBImage from '../../assets/wb-1.jpg'
 import WB2 from '../../assets/b2.jpg'
-import WB3 from '../../assets/b1.jpg'
+
+const ImgStyle = {
+  height: 'auto'
+}
 
 const Content1 = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-center my-2'>
+      <div className='flex flex-row items-center justify-center m-2.5'>
         {/* Container for Image and Text */}
         <div className='flex flex-row items-center justify-center space-x-4 mt-3'>
           <div className='w-1/2'>
@@ -15,8 +18,9 @@ const Content1 = () => {
               className='rounded-lg ml-3'
               src={WBImage}
               alt='Image of Wood Burning'
-              width={350}
+              width={375}
               height={700}
+              style={ImgStyle}
             />
           </div>
           <div className='w-1/2 text-left'>
@@ -46,6 +50,7 @@ const Content1 = () => {
               alt='Image 2 of Wood Burning'
               width={500}
               height={700}
+              style={ImgStyle}
             />
           </div>
         </div>
