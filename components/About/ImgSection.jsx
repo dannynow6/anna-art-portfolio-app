@@ -6,6 +6,8 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import WB1 from '../../assets/b1.jpg'
 import WB2 from '../../assets/about.jpg'
+import DogCat from '../../assets/dogcat.png'
+import Ink from '../../assets/ink.jpg'
 
 const featured = [
   {
@@ -22,6 +24,16 @@ const featured = [
     id: 3,
     image: WB2,
     title: 'Pyrography Anime Example 2'
+  },
+  {
+    id: 4,
+    image: DogCat,
+    title: 'Digital Image of dog and cat'
+  },
+  {
+    id: 5,
+    image: Ink,
+    title: 'Picture of Tattoo Ink'
   }
 ]
 
@@ -29,6 +41,10 @@ const ImgSection = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 3500 })
   ])
+
+  const ImgStyle = {
+    height: 'auto'
+  }
 
   return (
     <>
@@ -47,6 +63,7 @@ const ImgSection = () => {
                   alt={feature.title}
                   width={500}
                   height={334}
+                  style={ImgStyle}
                 />
               </div>
             ))}
