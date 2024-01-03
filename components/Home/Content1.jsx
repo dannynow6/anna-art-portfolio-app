@@ -10,7 +10,7 @@ const ImgStyle = {
 const Content1 = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-center m-2.5'>
+      <div className='flex flex-row items-center justify-center m-2.5 text-slate-600'>
         {/* Container for Image and Text */}
         <div className='flex flex-row items-center justify-center space-x-4 mt-3'>
           <div className='w-1/2'>
@@ -19,13 +19,12 @@ const Content1 = () => {
               src={WBImage}
               alt='Image of Wood Burning'
               width={375}
-              height={700}
               style={ImgStyle}
             />
           </div>
           <div className='w-1/2 text-left'>
             <h2 className='text-2xl font-bold mb-4'>Project Title</h2>
-            <p>
+            <p className='leading-7'>
               This is the block of text that will be displayed on the right
               side. Customize the text, font size, and other styles as needed
               using Tailwind's utility classes.
@@ -33,10 +32,10 @@ const Content1 = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-row items-center justify-center my-2'>
+      <div className='flex flex-row items-center justify-center my-2 text-slate-600'>
         <div className='w-1/2 text-right'>
           <h2 className='text-2xl font-bold mb-4'>Project 2 Title</h2>
-          <p>
+          <p className='leading-7'>
             This is the block of text that will be displayed on the right side.
             Customize the text, font size, and other styles as needed using
             Tailwind's utility classes.
@@ -49,7 +48,6 @@ const Content1 = () => {
               src={WB2}
               alt='Image 2 of Wood Burning'
               width={500}
-              height={700}
               style={ImgStyle}
             />
           </div>

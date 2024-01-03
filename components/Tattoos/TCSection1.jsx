@@ -9,7 +9,7 @@ const ImgStyle = {
 const TCSection1 = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-center m-2.5'>
+      <div className='flex flex-row items-center justify-center m-2.5 text-slate-500'>
         {/* Container for Image and Text */}
         <div className='flex flex-row items-center justify-center space-x-4 mt-3'>
           <div className='w-1/2'>
@@ -25,7 +25,7 @@ const TCSection1 = () => {
             <h2 className='text-2xl font-bold mb-4'>
               Creating a Tattoo Design
             </h2>
-            <p>
+            <p className='leading-7'>
               Here you can add some information relating to whatever this
               section will focus on. Maybe the process of tattooing or
               something.

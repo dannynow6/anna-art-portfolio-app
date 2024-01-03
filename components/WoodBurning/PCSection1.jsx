@@ -9,7 +9,7 @@ const ImgStyle = {
 const PCSection1 = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-center m-2.5'>
+      <div className='flex flex-row items-center justify-center m-2.5 text-slate-500'>
         {/* Container for Image and Text */}
         <div className='flex flex-row items-center justify-center space-x-4 mt-3'>
           <div className='w-1/2'>
@@ -23,7 +23,7 @@ const PCSection1 = () => {
           </div>
           <div className='w-1/2 text-left'>
             <h2 className='text-2xl font-bold mb-4'>The Pyrography Process</h2>
-            <p>
+            <p className='leading-7'>
               We can add text describing the Pyrography process and what
               designing a piece requires. Perhaps something else as well. For
               now, this text is just filler anyway.
