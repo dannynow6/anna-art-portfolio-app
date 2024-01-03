@@ -57,6 +57,9 @@ const ImgSection = () => {
           <div className='embla_container'>
             {featured.map(feature => (
               <div className='embla_slide' key={feature.id}>
+                <p className='text-slate-500 font-semibold text-xl pl-2 pb-1.5'>
+                  {feature.title}
+                </p>
                 <Image
                   className='rounded-lg'
                   src={feature.image}
