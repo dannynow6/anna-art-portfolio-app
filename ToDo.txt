@@ -1,3 +1,4 @@
+
 01.03.2024:
   - Create a component for Tattoos, Painting, and Pyrography pages to display dynamic content. Make components as reusable as possible for general consistency and usability 
 
