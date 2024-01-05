@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 /*
@@ -17,11 +18,12 @@ import React from 'react'
 
 */
 
-const Commission = () => {
+const Commission = ({ selectedOption }) => {
   return (
     <div className='md:container md:mx-auto'>
       <div className='flex justify-center mt-3'>
         <form className='text-slate-500 my-3'>
+          {/* Always visible Form Fields */}
           <fieldset className='mb-3'>
             <input
               type='text'
@@ -89,18 +91,82 @@ const Commission = () => {
               </label>
             </div>
           </fieldset>
-          <fieldset className='mb-3'>
-            <textarea
-              name='comment'
-              id='comment'
-              required
-              rows='3'
-              cols='31'
-              maxLength={400}
-              placeholder='Comment or Message'
-              className='p-1 text-slate-700 border border-sky-800 rounded hover:border-blue-300'
-            ></textarea>
-          </fieldset>
+          {/* Conditional fields based on selectedOption */}
+          {selectedOption === 'pyrography' && (
+            <>
+              <fieldset className='mb-3'>
+                <textarea
+                  name='pyrography-request'
+                  id='pyrography-request'
+                  required
+                  rows='3'
+                  cols='31'
+                  maxLength={400}
+                  placeholder='Describe Pyrography Commission'
+                  className='p-1 text-slate-700 border border-sky-800 rounded hover:border-blue-300'
+                ></textarea>
+              </fieldset>
+              <fieldset className='mb-3'>
+                <input
+                  type='text'
+                  name='size'
+                  id='size'
+                  required
+                  minlength='2'
+                  maxlength='25'
+                  size='28'
+                  placeholder='size of request'
+                  className='p-1 text-slate-700 border border-sky-800 rounded hover:border-blue-300'
+                />
+              </fieldset>
+            </>
+          )}
+          {selectedOption === 'painting' && (
+            <>
+              <fieldset className='mb-3'>
+                <textarea
+                  name='painting-request'
+                  id='painting-request'
+                  required
+                  rows='3'
+                  cols='31'
+                  maxLength={400}
+                  placeholder='Describe Painting Commission'
+                  className='p-1 text-slate-700 border border-sky-800 rounded hover:border-blue-300'
+                ></textarea>
+              </fieldset>
+            </>
+          )}
+          {selectedOption === 'tattoo' && (
+            <>
+              <fieldset className='mb-3'>
+                <textarea
+                  name='tattoo-request'
+                  id='tattoo-request'
+                  required
+                  rows='3'
+                  cols='31'
+                  maxLength={400}
+                  placeholder='Describe Tattoo Request'
+                  className='p-1 text-slate-700 border border-sky-800 rounded hover:border-blue-300'
+                ></textarea>
+              </fieldset>
+            </>
+          )}
+          {selectedOption === 'other' && (
+            <fieldset className='mb-3'>
+              <textarea
+                name='comment'
+                id='comment'
+                required
+                rows='3'
+                cols='31'
+                maxLength={400}
+                placeholder='Comment or Question'
+                className='p-1 text-slate-700 border border-sky-800 rounded hover:border-blue-300'
+              ></textarea>
+            </fieldset>
+          )}
         </form>
       </div>
     </div>

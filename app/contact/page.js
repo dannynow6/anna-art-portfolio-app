@@ -2,14 +2,15 @@
 import React from 'react'
 import HeroSection from '@/components/Home/HeroSection'
 import Layout from '@/components/Home/Layout'
-import Commission from '@/components/Contact/Commission'
+import ContactRequest from '@/components/Contact/ContactRequest'
 
 const ContactPage = () => {
+
   return (
     <>
       <Layout>
         <HeroSection />
-        <Commission />
+        <ContactRequest />
       </Layout>
     </>
   )
