@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ContactSelect from './ContactSelect'
 import Commission from './Commission'
 
@@ -9,7 +9,7 @@ const ContactRequest = () => {
   return (
     <>
       <ContactSelect onOptionChange={setSelectedOption} />
-      <Commission />
+      <Commission selectedOption={selectedOption} />
     </>
   )
 }
