@@ -1,18 +1,17 @@
 'use client'
-import React, { useState } from 'react' 
+import React, { useState } from 'react'
 import ContactSelect from './ContactSelect'
 import Commission from './Commission'
 
-
 const ContactRequest = () => {
-    const [selectedOption, setSelectedOption] = useState("")
+  const [selectedOption, setSelectedOption] = useState('')
 
-    return (
-        <>
-            <ContactSelect onOptionChange={setSelectedOption} />
-            <Commission selectedOption={selectedOption} />
-        </>
-    )
+  return (
+    <>
+      <ContactSelect onOptionChange={setSelectedOption} />
+      <Commission />
+    </>
+  )
 }
 
 export default ContactRequest

@@ -23,7 +23,7 @@ const ContactSelect = () => {
               onChange={handleChange}
               className='accent-sky-600'
             />
-            <label className='pl-1' for='pyrography'>
+            <label className='pl-1' htmlFor='pyrography'>
               Pyrography
             </label>
           </div>
@@ -36,7 +36,7 @@ const ContactSelect = () => {
               onChange={handleChange}
               className='accent-sky-600'
             />
-            <label className='pl-1' for='painting'>
+            <label className='pl-1' htmlFor='painting'>
               Painting
             </label>
           </div>
@@ -49,7 +49,7 @@ const ContactSelect = () => {
               onChange={handleChange}
               className='accent-sky-600'
             />
-            <label className='pl-1' for='tattoo'>
+            <label className='pl-1' htmlFor='tattoo'>
               Tattoo
             </label>
           </div>
@@ -62,7 +62,7 @@ const ContactSelect = () => {
               onChange={handleChange}
               className='accent-sky-600'
             />
-            <label className='pl-1' for='other'>
+            <label className='pl-1' htmlFor='other'>
               Other
             </label>
           </div>
