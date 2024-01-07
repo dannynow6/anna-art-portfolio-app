@@ -62,14 +62,30 @@ const Commission = ({ selectedOption }) => {
               Contact Preference:
             </legend>
             <div>
-              <input type='checkbox' name='by-email' id='by-email' />
-              <label htmlFor='by-email' className='pl-2'>
+              <input
+                type='checkbox'
+                name='by-email'
+                id='by-email'
+                className='accent-cyan-700'
+              />
+              <label
+                htmlFor='by-email'
+                className='pl-2 hover:font-semibold hover:text-cyan-700'
+              >
                 Email
               </label>
             </div>
             <div>
-              <input type='checkbox' name='text-msg' id='text-msg' />
-              <label htmlFor='text-msg' className='pl-2'>
+              <input
+                type='checkbox'
+                name='text-msg'
+                id='text-msg'
+                className='accent-cyan-700'
+              />
+              <label
+                htmlFor='text-msg'
+                className='pl-2 hover:font-semibold hover:text-cyan-700'
+              >
                 Text
               </label>
             </div>

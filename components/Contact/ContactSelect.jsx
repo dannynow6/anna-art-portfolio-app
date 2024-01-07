@@ -20,9 +20,9 @@ const ContactSelect = ({ onOptionChange }) => {
                 name='contact-type'
                 value='pyrography'
                 onChange={handleChange}
-                className='accent-cyan-700'
+                className='accent-cyan-700 hover:accent-cyan-500'
               />
-              <label className='pl-1' htmlFor='pyrography'>
+              <label className='pl-1 hover:text-cyan-700' htmlFor='pyrography'>
                 Pyrography
               </label>
             </div>
@@ -33,9 +33,9 @@ const ContactSelect = ({ onOptionChange }) => {
                 name='contact-type'
                 value='painting'
                 onChange={handleChange}
-                className='accent-cyan-700'
+                className='accent-cyan-700 hover:accent-cyan-500'
               />
-              <label className='pl-1' htmlFor='painting'>
+              <label className='pl-1 hover:text-cyan-700' htmlFor='painting'>
                 Painting
               </label>
             </div>
@@ -46,9 +46,9 @@ const ContactSelect = ({ onOptionChange }) => {
                 name='contact-type'
                 value='tattoo'
                 onChange={handleChange}
-                className='accent-cyan-700'
+                className='accent-cyan-700 hover:accent-cyan-500'
               />
-              <label className='pl-1' htmlFor='tattoo'>
+              <label className='pl-1 hover:text-cyan-700' htmlFor='tattoo'>
                 Tattoo
               </label>
             </div>
@@ -59,9 +59,9 @@ const ContactSelect = ({ onOptionChange }) => {
                 name='contact-type'
                 value='other'
                 onChange={handleChange}
-                className='accent-cyan-700'
+                className='accent-cyan-700 hover:accent-cyan-500'
               />
-              <label className='pl-1' htmlFor='other'>
+              <label className='pl-1 hover:text-cyan-700' htmlFor='other'>
                 Other
               </label>
             </div>
