@@ -3,7 +3,8 @@ import Image from 'next/image'
 import DC from '../../assets/dogcat.png'
 
 const ImgStyle = {
-  height: 'auto'
+  maxHeight: '750px',
+  maxWidth: '500px'
 }
 
 const OPCSection1 = () => {

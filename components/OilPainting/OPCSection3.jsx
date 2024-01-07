@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Brush from '../../assets/brush.jpg'
 
 const ImgStyle = {
-  height: 'auto'
+  maxHeight: '750px',
+  maxWidth: '500px'
 }
 
 const OPCSection3 = () => {
@@ -24,7 +25,7 @@ const OPCSection3 = () => {
               className='rounded-lg mr-3'
               src={Brush}
               alt='Picture of Paint Brushes'
-              width={500}
+              width={425}
               style={ImgStyle}
             />
           </div>

@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Ink from '../../assets/ink.jpg'
 
 const ImgStyle = {
-  height: 'auto'
+  maxHeight: '750px',
+  maxWidth: '500px'
 }
 
 const TCSection1 = () => {

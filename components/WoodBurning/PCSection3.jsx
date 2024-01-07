@@ -3,7 +3,8 @@ import Image from 'next/image'
 import PyroImg from '../../assets/b-couch.jpg'
 
 const ImgStyle = {
-  height: 'auto'
+  maxHeight: '750px',
+  maxWidth: '500px'
 }
 
 const PCSection3 = () => {
@@ -24,7 +25,7 @@ const PCSection3 = () => {
               className='rounded-lg mr-3'
               src={PyroImg}
               alt='Picture of Anna from Tattoo Convention'
-              width={500}
+              width={425}
               style={ImgStyle}
             />
           </div>

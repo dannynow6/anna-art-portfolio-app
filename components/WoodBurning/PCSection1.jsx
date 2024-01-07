@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Wb1 from '../../assets/b2.jpg'
 
 const ImgStyle = {
-  height: 'auto'
+  maxHeight: '750px',
+  maxWidth: '500px'
 }
 
 const PCSection1 = () => {

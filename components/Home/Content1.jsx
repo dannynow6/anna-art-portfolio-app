@@ -4,7 +4,8 @@ import WBImage from '../../assets/wb-1.jpg'
 import WB2 from '../../assets/b2.jpg'
 
 const ImgStyle = {
-  height: 'auto'
+  maxHeight: '750px',
+  maxWidth: '500px'
 }
 
 const Content1 = () => {
@@ -12,13 +13,13 @@ const Content1 = () => {
     <>
       <div className='flex flex-row items-center justify-center m-2.5 text-slate-600'>
         {/* Container for Image and Text */}
-        <div className='flex flex-row items-center justify-center space-x-4 mt-3'>
+        <div className='flex flex-row items-center justify-center space-x-4 mt-3 mx-2'>
           <div className='w-1/2'>
             <Image
               className='rounded-lg ml-3'
               src={WBImage}
               alt='Image of Wood Burning'
-              width={375}
+              width={400}
               style={ImgStyle}
             />
           </div>
@@ -47,7 +48,7 @@ const Content1 = () => {
               className='rounded-lg mr-3'
               src={WB2}
               alt='Image 2 of Wood Burning'
-              width={500}
+              width={400}
               style={ImgStyle}
             />
           </div>
